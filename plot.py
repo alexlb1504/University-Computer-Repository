@@ -56,8 +56,9 @@ for fname in files:
     except:
         print("Could not process file",fname,". This is probably because it contains text outside of the header line. It has been skipped.")
         continue
-    x = data[:,0]
-    y = data[:,1]
+    x = data[:,0]*1.890359168
+    y = data[:,1]*1.890359168
+
     
     # Add the name of each file we will process to a list
     if output: data_fnames.append(fname)
